@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Temperature{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+  <form>
+  <label for="ktemp">Temperature in Kelvin (K):</label><br>
+  <input type="text" id="ktemp" name="ktemp">
+    <input type="submit" value="Submit">
+</form>
+{% endblock content %}
